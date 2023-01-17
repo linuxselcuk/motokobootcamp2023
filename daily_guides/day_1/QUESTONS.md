@@ -60,5 +60,5 @@ actor {
 // true
 
 {
-    "question_3": "Async: the "async" keyword before the return value indicates that the function will take some time to complete and the caller will have to wait for a response. This is in line with the actor model of canisters, which means that they always respond to requests with a delay."
+    "question_4": "Async: the "async" keyword before the return value indicates that the function will take some time to complete and the caller will have to wait for a response. This is in line with the actor model of canisters, which means that they always respond to requests with a delay."
 }
