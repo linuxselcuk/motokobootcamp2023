@@ -11,6 +11,7 @@
 
 # question_2
 
+```
 // What is the issue with the following code sample?
 
 actor {
@@ -19,6 +20,7 @@ actor {
     counter := counter + 1;
   };
 }
+```
 
 # answer_2
 
@@ -32,6 +34,7 @@ actor {
 
 //What is the issue with the following code sample?
 
+```
 actor {
   var message : Text = 0;
 
@@ -44,6 +47,7 @@ actor {
     return(message);
   };
 }
+```
 
 # answer_3
 
