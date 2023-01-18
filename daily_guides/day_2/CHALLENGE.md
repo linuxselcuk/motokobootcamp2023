@@ -52,6 +52,27 @@ factorial(n : Nat) ->  async Nat
 ```
 number_of_words(t : Text) -> async Nat 
 ```
+```
+import Text "mo:base/Text";
+
+
+actor{
+
+  public func number_of_words(t : Text) : async Nat {
+    var a : Nat = 1;
+    var b : Text = " ";
+      for(c in t.chars()) {
+      b := Text.fromChar(c);
+      if (b ==  " "){
+        a := a +1;
+      }
+    };
+    return a;
+  }
+
+};
+```
+
 
 # Write a function find_duplicates that takes an array of natural numbers and returns a new array containing all duplicate numbers. The order of the elements in the returned array should be the same as the order of the first occurrence in the input array.
 
