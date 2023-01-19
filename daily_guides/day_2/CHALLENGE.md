@@ -45,6 +45,22 @@ factorial(n : Nat) ->  async Nat
 
 ```
 
+```
+actor {
+  public query func factorial(n : Nat) : async Nat {
+
+    func calculate(m : Nat) : Nat {
+      if (m == 0) {
+        return 1;
+      } else {
+        return m * calculate(m - 1);
+      };
+    };
+
+  return calculate(n);
+  };
+};
+```
 
 
 # Write a function number_of_words that takes a sentence and returns the number of words in the sentence.
@@ -81,6 +97,13 @@ find_duplicates(a : [Nat]) -> async [Nat]
 
 ```
 
+```
+public func find_duplicatese(a : [Nat]) : async [Nat]  {
+  var myArray : [Nat] = Array.reverse(a);
+  var finalArray : [Nat] = Array.reverse(myArray);
+  return finalArray;
+};
+```
 
 # Write a function convert_to_binary that takes a natural number n and returns a string representing the binary representation of n.
 
